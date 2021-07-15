@@ -27,11 +27,16 @@
 		question: 'Port to listen for express?',
 		key: 'EXPRESS_PORT'
 	}, 
+	{
+		question: 'Docker image tag for express app?',
+		key: 'DOCKER_IMAGE_TAG'
+	}
  ];
 
  // default value which will be overrided if provide
  let answers = {
 	'EXPRESS_PORT'	: process.env.EXPRESS_PORT || 3000,
+	'DOCKER_IMAGE_TAG' : 'yourrepository/imagetag'
  }
 
  // async function to ask question and update answers
